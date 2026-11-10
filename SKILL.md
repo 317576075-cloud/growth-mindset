@@ -620,9 +620,8 @@ E. 随便，先看看有什么
 
 每次完成觉察对话或日记后，如果用户同意保存：
 
-**保存到两个地方：**
-1. **本地文件**：运行 `python scripts/save-growth-log.py` 保存到 `~/.growth-logs/` 目录
-2. **平台记忆**：如当前 agent 环境提供记忆/日志写入工具（如 daily note 类接口），记录本次关键洞察；没有则仅存本地文件
+**保存：**
+运行 `python scripts/save-growth-log.py` 保存到 `~/.growth-logs/` 目录。如当前 agent 环境提供记忆/日志写入工具（如 daily note 类接口），也可以同步记录本次关键洞察。
 
 **记录格式：**
 ```
@@ -648,7 +647,7 @@ E. 随便，先看看有什么
 
 ## 成长型沟通（Growth Dialogue）
 
-> 这是一套将成长型心智应用于**人际对话**的实践框架，来自《成长型沟通》课程三周打卡内容。核心理念：沟通不是技巧问题，而是心态问题。当你真正想理解对方而不是赢，对话质量就会完全不同。
+> 这是一套将成长型心智应用于**人际对话**的实践框架。核心理念：沟通不是技巧问题，而是心态问题。当你真正想理解对方而不是赢，对话质量就会完全不同。
 
 ---
 
@@ -755,5 +754,4 @@ E. 随便，先看看有什么
 - 情绪觉察工具 + 自我关怀工具 + 意义澄清工具 → [emotion-tools.md](emotion-tools.md)
 - 成长日记模板 + 复原力四部曲日记模板 → [journal-template.md](journal-template.md)
 - 内驱力知识库（自我决定理论、驱动力画布）→ [intrinsic-motivation.md](intrinsic-motivation.md)
-- 课程资源索引 → [course-resources.md](course-resources.md)
 - 成长轨迹记录脚本 → [scripts/save-growth-log.py](scripts/save-growth-log.py)
