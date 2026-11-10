@@ -1,0 +1,23 @@
+M_SPANID='0.12.1' MIT License
+
+M_SPANID='0.12.2' Copyright (c) 2026 growth-mindset contributors
+
+M_SPANID='0.12.3' Permission is hereby granted, free of charge, to any person obtaining a copy
+M_SPANID='0.12.4' of this software and associated documentation files (the "Software"), to deal
+M_SPANID='0.12.5' in the Software without restriction, including without limitation the rights
+M_SPANID='0.12.6' to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+M_SPANID='0.12.7' copies of the Software, and to permit persons to whom the Software is
+M_SPANID='0.12.8' furnished to do so, subject to the following conditions:
+
+M_SPANID='0.12.9' The above copyright notice and this permission notice shall be included in all
+M_SPANID='0.12.10' copies or substantial portions of the Software.
+
+M_SPANID='0.12.11' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+M_SPANID='0.12.12' IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+M_SPANID='0.12.13' FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+M_SPANID='0.12.14' AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+M_SPANID='0.12.15' LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+M_SPANID='0.12.16' OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+M_SPANID='0.12.17' SOFTWARE.
+M_SPANID='0.12.18' EOF
+echo "=== 终扫 ==="; grep -rn -i "sankuai\|meituan\|美团\|大象\|学城\|daxue\|nocode\|liuyuxi\|宇茜\|刘宇茜\|skillhub\|hrskills\|dbcli\|catpaw\|catclaw\|km_search\|memory_write\|FRIDAY" . --exclude-dir=.git --include="*.md" --include="*.py" 2>/dev/null; echo "--- 零命中即通过 ---"; echo "=== URL检查 ==="; grep -rhoE "https?://[^ \"')\`]+" . --include="*.md" --include="*.py" | sort -u; echo "=== 脚本功能测试 ==="; cd /tmp && HOME=/tmp M_SPANID='0.12.19' python3 /root/growth-mindset-oss/scripts/save-growth-log.py save --type emotion --content "测试记录" --title "测试" 2>&1; HOME=/tmp M_SPANID='0.12.20' python3 /root/growth-mindset-oss/scripts/save-growth-log.py stats 2>&1 | head -8
